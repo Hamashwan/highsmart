@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>High Smart</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body >
+<!-- ################################################################################################ -->
+	<div class="topnav" id="myTopnav">
+	<div style="margin:auto;">
+    <nav > 
+			<a href="index.html">Home</a>
+			<a href="#">About Us</a>	
+			<a href="solutions.html">Solutions</a>
+			<a href="#">Services</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Contact Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+    </nav>
+    </div>
+	</div>
+<!-- Home -->	
+	 <div id="homediv">
+  <picture	>
+  <source media="(min-width:650px)" srcset="hs.png">
+  <source media="(min-width:200px)" srcset="hs2.png">
+  <img id="homelogo" src="hs.png" alt="High Smart Logo" >
+  </picture>
+
+
+		<button id="myBtn"><i class="fa fa-play-circle" style="margin-right:10px;"></i>Watch Video</button>
+		
+	</div> 
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <iframe width="100%" height="600px"
+		src="https://www.youtube.com/embed/tgbNymZ7vqY">
+	</iframe>
+  </div>
+
+</div>
+
+<!-- Solutions-->
+<div> 
+
+<div class="sectiontitle" > <h1 class="heading"> <a href="solutions.html"> Providing you with high end smart home solutions </a></h1>   </div>
+    
+<div Class="grow" style="background-image:url(lights.jpg); background-position:0% 37%;" > <h1> Smart Lighting </h1>  <br> <p >Smart lighting adds elegance, ambiance, convenience and energy efficiency to your home. Make your house appear occupied while you are away. Raise or dim any light in the room or the entire house with a single touch. Automate your lighting to respond to your schedule without any touch at all. It’s not just smart, it’s brilliant.
+
+</p>    </div>
+<div Class="grow" style="background-image:url(audio.png);"> <h1>Audio Systems </h1> <br> <p > Stream your favorite playlist on full blast through the entire house or enjoy it softly in the kitchen. With high-resolution, multi-room audio from Smart Systems, you can play all of your favorite music everywhere or in just one room—with the touch of a button. </p>     </div>
+<div Class="grow" style="background-image:url(ac.png); background-position:0% 35%;"> <h1> Comfort & Convenience  </h1> <br> <p > Enjoy a consistently comfortable and inviting home that automatically responds to your life and maximizes energy savings.
+Smart, Comfortable and Convenient Being comfortable encompasses more than just adjusting the temperature. Control humidity levels, automate shades, power on the hot tub on your way home, and program your entire house for maximum energy effi	ciency. 
+
+</p>      </div>
+<div Class="grow" style="background-image:url(camera.png); background-position:0% 35%;"> <h1>Security & Safety </h1> <br> <p >Check in on things at home from wherever you are. Receive alerts when someone enters the house, the garage door is left ajar, or if there is a leak detected in the basement. Intelligent security puts peace of mind at your fingertips so you can rest assured that all is safe and sound at home, whether you are home or away.
+
+</p>      </div>
+
+
+	
+
+</div>
+
+<!-- Services -->
+
+<div class="sectiontitle">
+	<h1 class="heading"><a href="services.html"> Dedicated to great service and customer support </a></h1>
+</div>
+
+<div>
+
+<ul id="services">
+	<li class="one_third">
+	<article>
+          <h2 class="heading"> <a href="#">CONSULTATION</a></h2>
+          <p>Pre-meeting and discussion about everything that should be included in your smart home.<br> <br> <br> </p>
+          <footer><a href="#">View Details </a></footer>
+    </article>
+    </li>
+    
+	<li class="one_third">
+    <article>
+        <h2 class="heading"><a href="#">SYSTEM DOCUMENTATION </a></h2>
+        <p>We provide the documents that describes your smart home's requirements, capabilities, and specifications. <br> <br> </p>
+        <footer><a href="#">View Details </a></footer>
+    </article>
+    </li>
+	
+    <li class="one_third">
+    <article>
+        <h2 class="heading"> <a href="#">DESIGN & ENGINEERING
+</a></h2>
+        <p>Comprehensive and thoughtful system design and engineering up front leads to the best balance of functionality, reliability and aesthetics in the end result.</p>
+        <footer><a href="#">View Details </a></footer>
+    </article>
+	<li class="one_third">
+	<article>
+          <h2 class="heading"> <a href="#">IMPLEMENTATION</a></h2>
+          <p>Our technicians plan and implement all of your cabling needs in new construction or when upgrading an existing space. <br> <br></p>
+          <footer><a href="#">View Details </a></footer>
+    </article>
+    </li>
+    
+	<li class="one_third">
+    <article>
+        <h2 class="heading"><a href="#">PROJECT MANAGEMENT
+</a></h2>
+        <p>NEW PROMPT NEEDED<br><br><br> <br></p>
+        <footer><a href="#">View Details </a></footer>
+    </article>
+    </li>
+	
+    <li class="one_third">
+    <article>
+        <h2 class="heading"> <a href="#">MAINTENANCE & SUPPORT
+</a></h2>
+        <p>Hi-Smart's technical team is available on 8-5 hours to diagnose, update, replace, and repair any failure that can happen. <br><br></p>
+        <footer><a href="#">View Details </a></footer>
+    </article>
+	
+    </li>
+ </ul>
+
+</div>
+
+
+
+
+	<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+
+<!-- ################################################################################################ -->
+<!-- Brands -->
+
+<div id="brands">
+<div class="sectiontitle">
+	<h1 class="heading">Brands </h1>
+     <p> <br> We partner with the best global brands to bring the highest quality to your home</p>
+</div>
+<div class="brand" style="background-image:url(logo-control4.png);">  </div>
+<div class="brand" style="background-image:url(logo-fibaro.jpg);">  </div>
+<div class="brand" style="background-image:url(logo-cisco.jpg);">  </div>
+<div class="brand" style="background-image:url(logo-gallo.jpg);">  </div>
+<div class="brand" style="background-image:url(logo-bose.png);">  </div>
+<div class="brand" style="background-image:url(logo-ieast.png);">  </div>
+<div class="brand" style="background-image:url(logo-triad.jpg);">  </div>
+<div class="brand" style="background-image:url(logo-paradigm.png);">  </div>
+<div class="brand" style="background-image:url(logo-pakedge.png);">  </div>
+<div class="brand" style="background-image:url(logo-somfy.png);">  </div>
+<div class="brand" style="background-image:url(logo-yale.png);">  </div>
+<div class="brand" style="background-image:url(logo-rako.jpg);">  </div>
+<div class="brand" style="background-image:url(logo-kaadas.jpg);">  </div>
+<div class="brand" style="background-image:url(logo-litheaudio.png);">  </div>
+klipsch
+luma cameras
+anthem home theater
+araknis
+jvc
+elite screens
+amazon
+
+</div>
+
+<!-- ################################################################################################ -->
+<!-- Contact -->
+
+
+
+
+<div id="Contact">
+<div class="sectiontitle">
+
+<h1 class="heading">Contact Us </h1>
+</div>
+
+	<div id="mapdiv">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12982.536554430484!2d45.4055939!3d35.5627369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x392304a05b5701d0!2sHigh%20Smart!5e0!3m2!1sen!2siq!4v1606030571305!5m2!1sen!2siq" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+	</div>
+	
+	<div id="contactforum">
+		<p> Mobile: <a href="tel:+964- 770 320 0005">+964 770 320 0005 </a> <br>
+					<a href="tel:+964 53 330 0005">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp +964 53 330 0005 </a> <br>
+			Email:	<a href="mailto:info@hi-smart.co"> info@hi-smart.co
+
+
+
+
+		
+		
+		
+		
+		</p>
+	</div>
+
+
+</div>
+
+
+</body>
+</html>

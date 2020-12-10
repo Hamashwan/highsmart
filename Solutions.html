@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>High Smart</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+<body >
+<!-- ################################################################################################ -->
+	<div class="topnav" id="myTopnav">
+	<div style="margin:auto;">
+    <nav > 
+			<a href="index.html">Home</a>
+			<a href="#">About Us</a>
+			<a href="solutions.html">Solutions</a>
+			<a href="#">Services</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Contact Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+    </nav>
+	</div>
+	</div>
+<!-- ################################################################################################ -->
+<div>
+
+<div class="sectiontitle" > <h1 class="heading">Solutions</h1>   </div>
+
+
+<div id="lights-first" class="article" style="display:block;">
+<div class="articletitle" > <h1 class="heading">Smart Lighting</h1>   </div>
+<div> <p class="articletext"> Smart lighting adds elegance, ambiance, convenience and energy efficiency to your home. Make your house appear occupied while you are away. Raise or dim any light in the room or the entire house with a single touch. Automate your lighting to respond to your schedule without any touch at all. It’s not just smart, it’s brilliant.</p> </div>
+  <button onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 1</button>	
+
+  <button onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 2</button>	
+  
+  <button onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 3</button>	
+  
+  <button onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 4</button>	
+</div>
+
+<div id="lights-second" class="article" style="display:none;">
+<div class="articletitle" > <h1 class="heading">Smart Lighting</h1>   </div>
+<div> <p class="articletext"> Div 2 </p> </div>
+  <button onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 1</button>	
+
+  <button onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 2</button>	
+  
+  <button onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 3</button>	
+  
+  <button onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 4</button>	
+</div>
+
+<div id="lights-third" class="article" style="display:none;">
+<div class="articletitle" > <h1 class="heading">Smart Lighting</h1>   </div>	
+<div> <p class="articletext"> Div 3 </p> </div>
+  <button onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 1</button>	
+
+  <button onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 2</button>	
+  
+  <button onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 3</button>	
+  
+  <button onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 4</button>	
+</div>
+
+<div id="lights-fourth" class="article" style="display:none;">
+<div class="articletitle" > <h1 class="heading">Smart Lighting</h1>   </div>
+<div> <p class="articletext"> Div 4 </p> </div>
+  <button onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 1</button>	
+
+  <button onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 2</button>	
+  
+  <button onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 3</button>	
+  
+  <button onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')">Swap To Div 4</button>	
+</div>
+
+
+</div>
+
+<script type="text/javascript">
+
+function SwapToDiv1(div1,div2, div3, div4)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   d3 = document.getElementById(div3);
+   d4 = document.getElementById(div4);
+
+   {
+      d1.style.display = "block";
+      d2.style.display = "none";
+      d3.style.display = "none";
+      d4.style.display = "none";
+
+   }
+}
+
+function SwapToDiv2(div1,div2, div3, div4)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   d3 = document.getElementById(div3);
+   d4 = document.getElementById(div4);
+
+   {
+      d1.style.display = "none";
+      d2.style.display = "block";
+	  d3.style.display = "none";
+      d4.style.display = "none";
+
+   }
+}
+
+function SwapToDiv3(div1,div2, div3, div4)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   d3 = document.getElementById(div3);
+   d4 = document.getElementById(div4);
+
+   {
+      d1.style.display = "none";
+      d2.style.display = "none";
+	  d3.style.display = "block";
+      d4.style.display = "none";
+
+   }
+}
+
+function SwapToDiv4(div1,div2, div3, div4)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   d3 = document.getElementById(div3);
+   d4 = document.getElementById(div4);
+
+   {
+      d1.style.display = "none";
+      d2.style.display = "none";
+	  d3.style.display = "none";
+      d4.style.display = "block";
+
+   }
+}
+
+</script>
+
+
+</body>
+</html>
