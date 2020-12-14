@@ -189,6 +189,29 @@ a{text-decoration:none; color:#8a4fff;}
   padding:0px;	margin-top:50px; margin-bottom:20px;
 } 
 
+.articlebutton
+{background-color:transparent;
+color:  #2fb093;
+border:none;
+width:150px;
+height:150px;
+font-size:80px;
+margin-top:190px;
+border-radius:10%
+}
+
+.articlebutton:hover
+{
+	background-color:purple;
+}
+
+.selectedbutton
+{
+	background-color:rgba(0, 0, 0, 0.8);
+	
+}
+
+
 /* Services */
 
 #services{padding:10px 0; margin:20px;}
@@ -217,10 +240,11 @@ a{text-decoration:none; color:#8a4fff;}
 }
 }
 
-.articletitle{color:black; background-position:cover;  float: left; text-align: left;
+.articletitle{color:white; background-position:cover;  float: left; text-align: center;
   padding:0px;	margin-top:10px; margin-bottom:50px; width:100%;}
 .articletext{width:100%;}
 .article{width: 50%; margin-left:40px;}
+
 
 #lights-first{
   background-image: url("lights2.jpg");
