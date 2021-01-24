@@ -1,0 +1,123 @@
+<!DOCTYPE html>	
+<html>
+<head>
+<title>High Smart</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body >
+
+<!-- ################################################################################################ -->
+	<div class="topnav" id="myTopnav">
+	<div style="margin:auto;">
+    <nav > 
+			<a href="index.html">Home</a>
+			<a href="#">About Us</a>	
+			<a href="solutions.html">Solutions</a>
+			<a href="services.html">Services</a>
+			<a href="#">Contact Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+    </nav>
+    </div>
+	</div>
+<div class="aboutustitle">
+	
+<h1> Our Work </h1>
+<p> From the beginning of 2013 we were a team working on IT and Cisco networking solution after that we founded the smart home solution as a very important and necessary technology to be exist in our region so we focused on wide range of smart products, sound /Video solution and received Control4 Authorized dealer in 2016 after attending and receiving several Control4 training course and certification In Dubai. </p>
+</div>
+
+
+
+<div>
+<div class="gallery">
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="ac.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="ac.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="ac.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="ac.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="ac.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="ac.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+ 
+ </div>
+<div class="projectTextDiv">
+<div class="ProjectsText"> 
+<h1> Slemani Public Museum </h1>
+<p>Security and stuff very good uwuwuwuwu</p>
+</div>
+</div>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+</body>
+</html>
