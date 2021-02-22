@@ -169,19 +169,20 @@ a{text-decoration:none; color:#8a4fff;}
   text-align: center;
   overflow: hidden;
   color:white;		
-  text-shadow: 0.5vh 0.5vh 1vh black;
+  text-shadow: 0.5vh 0.5vh 2vh black;
 }
 .grow:hover {
   height: 400px;
   
 }
-.grow p {margin-left:100px; margin-right:100px; text-align:left;
+.grow p {margin-left:100px; margin-right:100px; text-align:left; font-size:16px; font:Quicksand; font-weight: bold;   text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
+
 @media screen and (max-width: 600px) 
 {
 .grow p
 {
-	margin-left: 20px; margin-right: 20px;
+	margin-left: 20px; margin-right: 20px; 
 }
 }
 #solutionsTitle {color:black; background-size:100%; background-position:cover; width: 100%; float: left;  text-align: center;
