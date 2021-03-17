@@ -214,8 +214,8 @@ margin-right:30px;
 }
 
 
-
-
+/* Big Chungus */
+.big_wrapper{padding:30px; margin:auto;}
 
 /* Services 
 
@@ -344,9 +344,8 @@ box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.02);
 #mapdiv
 {display:inline-block; width:49.5%; height:500px; }
 .contactform 
-{width:33%; display:inline-block; height:500px; margin:0px; vertical-align:top;}
-.contactinfo
-{margin:auto; text-align:center;}
+{width:33%; display:inline-block; height:500px; margin:0px; vertical-align:top;margin:auto; text-align:center;}
+
 .contacticon {width:100px;}
 
 @media screen and (max-width: 600px) {
