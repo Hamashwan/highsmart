@@ -1,10 +1,14 @@
-
-
-body {margin: 0; font-family:Quicksand-regular;}
-a{text-decoration:none; color:#8a4fff;}
+body {
+  margin: 0;
+  font-family: Quicksand-regular;
+}
+a {
+  text-decoration: none;
+  color: #8a4fff;
+}
 @font-face {
-   font-family: Quicksand-regular;
-   src: url(quicksand-regular.ttf);
+  font-family: Quicksand-regular;
+  src: url(quicksand-regular.ttf);
 }
 
 /* Navbar */
@@ -12,99 +16,99 @@ a{text-decoration:none; color:#8a4fff;}
   list-style-type: none;
   padding: 0;
   overflow: hidden;
-  background-image: linear-gradient(to right, #24B1AB, #38B080);
-  text-align:center;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1;
-
+  background-image: linear-gradient(to right, #24b1ab, #38b080);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-
-.topnav a
-{display:inline-block; 
-  position:relative; 
+.topnav a {
+  display: inline-block;
+  position: relative;
   color: white;
-  margin:0 30px 0 0;
+  margin: 0 30px 0 0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size:19px;
-	
+  font-size: 19px;
 }
 
-.topnav a:hover:not(.active) {color: #111;}
+.topnav a:hover:not(.active) {
+  color: #111;
+}
 
 .topnav .icon {
   display: none;
 }
 
-@media screen and (max-width: 600px) 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-{
-  .topnav a:not(:first-child) {display: none;}
-    .topnav a
-	{float:left;}
-  .topnav a.icon 
-  {
+@media screen and (max-width: 600px) /* When the screen is less than 600 pixels wide,
+  hide all links,
+  except for the first one ("home") . Show the link that contains should open and close the topnav (.icon) */ {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a {
+    float: left;
+  }
+  .topnav a.icon {
     float: right;
     display: block;
   }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  .topnav.responsive {position: fixed;}
-  .topnav.responsive a.icon 
-  {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a 
-  {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-
-
-
+.topnav.responsive {
+  position: fixed;
+}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
 
 /* Home image */
 
 #homediv {
   background-image: url("cover.jpg");
-  background-color: #cccccc; 
-  width:100%;
+  background-color: #cccccc;
+  width: 100%;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover	;
+  background-size: cover;
   position: relative;
-  text-align:center; 
-  color:white;
+  text-align: center;
+  color: white;
   text-shadow: 0.5vh 0.5vh 1vh black;
-
 }
 
-#hometext { 
+#hometext {
   font-size: 15vh;
   padding-top: 20vh;
-  margin:0px;
-  font-family:helvetica;
-  
+  margin: 0px;
+  font-family: helvetica;
 }
 #homesubtext {
-	font-size:5vh;
-	font-family:helvetica;
+  font-size: 5vh;
+  font-family: helvetica;
 }
-#homelogo {width:60vw; padding-top:20vh}
+#homelogo {
+  width: 60vw;
+  padding-top: 20vh;
+}
 
 @media screen and (max-width: 600px) {
-
-#homelogo {width:80vw; padding-top:20vh}
+  #homelogo {
+    width: 80vw;
+    padding-top: 20vh;
+  }
 }
 
 #myBtn {
@@ -117,13 +121,12 @@ a{text-decoration:none; color:#8a4fff;}
   text-decoration: none;
   display: block;
   font-size: 16px;
-  cursor: pointer;	
+  cursor: pointer;
   position: absolute;
   bottom: 30px;
-  left:50%;
-  margin-left:-100px;
-  border-radius:4px;
-  
+  left: 50%;
+  margin-left: -100px;
+  border-radius: 4px;
 }
 
 /* The Modal (background) */
@@ -137,9 +140,8 @@ a{text-decoration:none; color:#8a4fff;}
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-  
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -148,116 +150,137 @@ a{text-decoration:none; color:#8a4fff;}
   padding: 0px;
   border: 0px;
   width: 70%;
-  background-color:black;
+  background-color: black;
 }
 
-
 /* Solutions */
- .grow {
-  background-position:center;
-  background-size:cover;
-  height: 100px; 
+.grow {
+  background-position: center;
+  background-size: cover;
+  height: 100px;
   width: -moz-calc(100% - 8x);
   width: -webkit-calc(100% - 8px);
   width: -o-calc(100% - 8px);
   width: calc(100% - 8px);
-  margin:4px;
+  margin: 4px;
   position: relative;
-  display:block;
+  display: block;
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
   text-align: center;
   overflow: hidden;
-  color:white;		
+  color: white;
   text-shadow: 0.5vh 0.5vh 2vh black;
 }
 .grow:hover {
   height: 400px;
-  
 }
-.grow p {margin-left:100px; margin-right:100px; text-align:left; font-size:16px; font:Quicksand; font-weight: bold;   text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-}
-
-@media screen and (max-width: 600px) 
-{
-.grow p
-{
-	margin-left: 20px; margin-right: 20px; 
-}
-}
-#solutionsTitle {color:black; background-size:100%; background-position:cover; width: 100%; float: left;  text-align: center;
-  padding:0px;	margin-top:50px; margin-bottom:20px;
-} 
-
-.articlebutton
-{background-color:transparent;
-color:#2fb093;
-border:none;
-width:100px;
-height:100px;
-font-size:60px;
-margin-top:50px;
-border-radius:50%;
-margin-left:30px;
-margin-right:30px;
+.grow p {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
+  font-size: 16px;
+  font: Quicksand;
+  font-weight: bold;
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
 
-.articlebutton:hover
-{
-	background-color:purple;
+@media screen and (max-width: 600px) {
+  .grow p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+#solutionsTitle {
+  color: black;
+  background-size: 100%;
+  background-position: cover;
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 0px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
-.selectedbutton
-{
-	background-color:rgba(0, 0, 0, 0.8);
-	
+.articlebutton {
+  background-color: transparent;
+  color: #2fb093;
+  border: none;
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+  margin-top: 50px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
+.articlebutton:hover {
+  background-color: purple;
+}
+
+.selectedbutton {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
 /* Big Chungus */
-.big_wrapper{padding:30px; margin:auto;}
+.big_wrapper {
+  padding: 30px;
+  margin: auto;
+}
 
-/* Services 
+#services a {
+  text-decoration: none;
+  color: inherit;
+}
+#services a:hover {
+  color: #8a4fff;
+}
 
-#services{padding:10px 0; margin:20px; margin-bottom:30px; text-align:center;}
-#services a{text-decoration:none; color:inherit;}
-#services article:hover a{color:#8a4fff;}
-*/
-
-
-.sectiontitle{color:black; background-size:100%; background-position:cover; width: 100%; text-align: center;
-  padding:0px;	margin-top:50px; margin-bottom:50px; display:block;}
-.sectiontitle a{text-decoration:none; color:inherit;}
-.sectiontitle a:hover{color:#8a4fff;}
+.sectiontitle {
+  color: black;
+  background-size: 100%;
+  background-position: cover;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+}
+.sectiontitle a {
+  text-decoration: none;
+  color: inherit;
+}
+.sectiontitle a:hover {
+  color: #8a4fff;
+}
 
 /* Wrapper */
-#services{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-gap:30px;
+#services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 
-
-
-
-.one_third{
--webkit-box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.03);
--moz-box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.03);
-box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.02);
-
-
-  text-align:center;
-}
-  
-
-.one_third h2{padding-top:30px;}
-
-	
-@media screen and (max-width: 600px) 
-{
 .one_third {
-	 width: 85%; height:300px;
+  -webkit-box-shadow: 0px 0px 66px 44px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0px 0px 66px 44px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 0px 66px 44px rgba(0, 0, 0, 0.02);
+
+  text-align: center;
 }
+
+.one_third h2 {
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .one_third {
+    width: 85%;
+    height: 300px;
+  }
 }
 /*
 .articletitle{color:white; background-position:cover;  float: left; text-align: center;
@@ -266,104 +289,126 @@ box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.02);
 .article{width: 50%; margin-left:40px;}
 */
 
-
-#lights-first{
+#lights-first {
   background-image: url("lights.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  text-align:center; 
-  color:white;
-  margin:auto;
-  
+  text-align: center;
+  color: white;
+  margin: auto;
 }
-#lights-second{
+#lights-second {
   background-image: url("cover.jpg");
-  width:100%;
+  width: 100%;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;	
+  background-size: cover;
   position: relative;
-  text-align:center; 
-  color:white;
+  text-align: center;
+  color: white;
   text-shadow: 0.5vh 0.5vh 1vh black;
-  margin:auto;
+  margin: auto;
 }
 
-#lights-third{
+#lights-third {
   background-image: url("cover.jpg");
-  width:100%;
+  width: 100%;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;	
+  background-size: cover;
   position: relative;
-  text-align:center; 
-  color:white;
+  text-align: center;
+  color: white;
   text-shadow: 0.5vh 0.5vh 1vh black;
-  margin:auto;
+  margin: auto;
 }
 
-#lights-fourth{   
+#lights-fourth {
   background-image: url("cover.jpg");
-  background-color: #cccccc; 
-  width:100%;
+  background-color: #cccccc;
+  width: 100%;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;	
+  background-size: cover;
   position: relative;
-  text-align:center; 
-  color:white;
+  text-align: center;
+  color: white;
   text-shadow: 0.5vh 0.5vh 1vh black;
-  margin:auto;
+  margin: auto;
 }
-
 
 /* Brands */
 
-.brand
-{ height: 170px; width:170px; background-size:contain; background-repeat:no-repeat; background-position:center; b-webkit-box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.03);
-  -moz-box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.03);
-  box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.02);
-} 
-#logo_grid
-{
-  margin:auto;
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap:1em
+.brand {
+  height: 170px;
+  width: 170px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  b-webkit-box-shadow: 0px 0px 66px 44px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0px 0px 66px 44px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 0px 66px 44px rgba(0, 0, 0, 0.02);
 }
-
+#logo_grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
 
 @media screen and (max-width: 600px) {
-#brands{width:353px; margin:auto;}
+  #brands {
+    width: 353px;
+    margin: auto;
+  }
 
-.brand{margin:2px;
-}
+  .brand {
+    margin: 2px;
+  }
 }
 /*Contact*/
-#contact
-{ margin:auto;}
-#contactdiv
-{width:900px; margin:auto;}
-#mapdiv
-{display:inline-block; width:49.5%; height:500px; }
-.contactform 
-{width:33%; display:inline-block; height:500px; margin:0px; vertical-align:top;margin:auto; text-align:center;}
-
-.contacticon {width:100px;}
-
-@media screen and (max-width: 600px) {
-#mapdiv{width:100%; height:300px;}
-#contactform{width:100%;}
+#contact {
+  margin: auto;
+}
+#contactdiv {
+  width: 900px;
+  margin: auto;
+}
+#mapdiv {
+  display: inline-block;
+  width: 49.5%;
+  height: 500px;
+}
+.contactform {
+  width: 33%;
+  display: inline-block;
+  height: 500px;
+  margin: 0px;
+  vertical-align: top;
+  margin: auto;
+  text-align: center;
 }
 
+.contacticon {
+  width: 100px;
+}
 
+@media screen and (max-width: 600px) {
+  #mapdiv {
+    width: 100%;
+    height: 300px;
+  }
+  #contactform {
+    width: 100%;
+  }
+}
 
-/* About us gallery */ 
+/* About us gallery */
 
 * {
   box-sizing: border-box;
@@ -451,22 +496,32 @@ box-shadow: 0px 0px 66px 44px rgba(0,0,0,0.02);
 .demo:hover {
   opacity: 1;
 }
-.gallery
-{width:60%;
-display:inline-block;}
+.gallery {
+  width: 60%;
+  display: inline-block;
+}
 
-.projectTextDiv
+.projectTextDiv {
+  width: 39%;
+  display: inline-block;
+  height: 500px;
+  margin: 0px;
+  padding-top: 200px;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 30px;
+}
 
-{width:39%; display:inline-block; height:500px; margin:0px; padding-top:200px; vertical-align:top; text-align:left; padding-left:30px;}
+.ProjectsText {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
 
-
-
-
-.ProjectsText
-{margin:auto;
-text-align:center;
-display:inline-block;}
-
-.aboutustitle
-
-{margin:auto; margin-top:100px; text-align:center; width:1000px; padding-bottom:30px;}
+.aboutustitle {
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  width: 1000px;
+  padding-bottom: 30px;
+}

@@ -1,157 +1,231 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>High Smart</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <head>
+    <title>High Smart</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- ################################################################################################ -->
+    <div class="topnav" id="myTopnav">
+      <div style="margin: auto">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="services.html">Services</a>
+          <a href="#">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <!-- ################################################################################################ -->
 
+    <div style="margin-top: 60px; margin-bottom: 60px" id="lighting" ;>
+      <div id="lights-first" class="article" style="display: block">
+        <div class="articletitle"><h1 class="heading">Centralized</h1></div>
+        <div>
+          <p class="articletext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco
+          </p>
+        </div>
+        <button
+          class="articlebutton selectedbutton"
+          onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          <i class="fa fa-home"></i>
+        </button>
 
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          <i class="fa fa-trash"></i>
+        </button>
 
-</head>
-<body>
-<!-- ################################################################################################ -->
-	<div class="topnav" id="myTopnav">
-	<div style="margin:auto;">
-    <nav> 
-			<a href="index.html">Home</a>
-			<a href="aboutus.html">About Us</a>
-			<a href="solutions.html">Solutions</a>
-			<a href="services.html">Services</a>
-			<a href="#">Contact Us</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
-			</a>
-    </nav>
-	</div>
-	</div>
-<!-- ################################################################################################ -->
-	
-<div style="margin-top:60px; margin-bottom:60px;" id="lighting"; >
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          <i class="fa fa-folder"></i>
+        </button>
 
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          <i class="fa fa-close"></i>
+        </button>
+      </div>
 
+      <div id="lights-second" class="article" style="display: none">
+        <div class="articletitle"><h1 class="heading">Automation</h1></div>
+        <div>
+          <p class="articletext">Something something automated lights</p>
+        </div>
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Centralization
+        </button>
 
-<div id="lights-first" class="article" style="display:block;">
-<div class="articletitle" > <h1 class="heading">Centralized</h1>   </div>
-<div> <p class="articletext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p> </div>
-  <button class="articlebutton selectedbutton" onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')"><i class="fa fa-home"></i></button>	
-  
-  <button class="articlebutton" onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')"><i class="fa fa-trash"></i></button>	
-  
-  <button class="articlebutton" onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')"><i class="fa fa-folder"></i></button>	
-  
-  <button class="articlebutton" onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')"><i class="fa fa-close"></i></button>	
-</div>
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Automation
+        </button>
 
-<div id="lights-second" class="article" style="display:none;">
-<div class="articletitle" > <h1 class="heading">Automation</h1>   </div>
-<div> <p class="articletext"> Something something automated lights </p> </div>
-  <button class="articlebutton" onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')">Centralization</button>	
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Scenes
+        </button>
 
-  <button class="articlebutton" onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')">Automation</button>	
-  
-  <button class="articlebutton" onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')">Scenes</button>	
-  
-  <button onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')">Ease Of Use</button>	
-</div>
+        <button
+          onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Ease Of Use
+        </button>
+      </div>
 
-<div id="lights-third" class="article" style="display:none;">
-<div class="articletitle" > <h1 class="heading">Scenes</h1>   </div>	
-<div> <p class="articletext"> text </p> </div>
-  <button class="articlebutton" onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')">Centralization</button>	
+      <div id="lights-third" class="article" style="display: none">
+        <div class="articletitle"><h1 class="heading">Scenes</h1></div>
+        <div><p class="articletext">text</p></div>
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Centralization
+        </button>
 
-  <button class="articlebutton" onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')">Automation</button>	
-  
-  <button class="articlebutton" onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')">Scenes</button>	
-  
-  <button class="articlebutton" onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')">Ease Of Use</button>	
-</div>
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Automation
+        </button>
 
-<div id="lights-fourth" class="article" style="display:none;">
-<div class="articletitle" > <h1 class="heading">Ease of use</h1>   </div>
-<div> <p class="articletext"> Control your lighting from wherever is more convenient for you wether it be your phone, a tablet, voice control, or a simple keypad </p> </div>
-  <button onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')">Centralization</button>	
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Scenes
+        </button>
 
-  <button onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')">Automation</button>	
-  
-  <button onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')">Scenes</button>	
-  
-  <button onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')">Ease Of Use</button>	
-</div>
+        <button
+          class="articlebutton"
+          onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Ease Of Use
+        </button>
+      </div>
 
+      <div id="lights-fourth" class="article" style="display: none">
+        <div class="articletitle"><h1 class="heading">Ease of use</h1></div>
+        <div>
+          <p class="articletext">
+            Control your lighting from wherever is more convenient for you
+            wether it be your phone, a tablet, voice control, or a simple keypad
+          </p>
+        </div>
+        <button
+          onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Centralization
+        </button>
 
-</div>
+        <button
+          onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Automation
+        </button>
 
-<script type="text/javascript">
+        <button
+          onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Scenes
+        </button>
 
-function SwapToDiv1(div1,div2, div3, div4)
-{
-   d1 = document.getElementById(div1);
-   d2 = document.getElementById(div2);
-   d3 = document.getElementById(div3);
-   d4 = document.getElementById(div4);
+        <button
+          onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')"
+        >
+          Ease Of Use
+        </button>
+      </div>
+    </div>
 
-   {
-      d1.style.display = "block";
-      d2.style.display = "none";
-      d3.style.display = "none";
-      d4.style.display = "none";
+    <script type="text/javascript">
+      function SwapToDiv1(div1, div2, div3, div4) {
+        d1 = document.getElementById(div1);
+        d2 = document.getElementById(div2);
+        d3 = document.getElementById(div3);
+        d4 = document.getElementById(div4);
 
-   }
-}
+        {
+          d1.style.display = "block";
+          d2.style.display = "none";
+          d3.style.display = "none";
+          d4.style.display = "none";
+        }
+      }
 
-function SwapToDiv2(div1,div2, div3, div4)
-{
-   d1 = document.getElementById(div1);
-   d2 = document.getElementById(div2);
-   d3 = document.getElementById(div3);
-   d4 = document.getElementById(div4);
+      function SwapToDiv2(div1, div2, div3, div4) {
+        d1 = document.getElementById(div1);
+        d2 = document.getElementById(div2);
+        d3 = document.getElementById(div3);
+        d4 = document.getElementById(div4);
 
-   {
-      d1.style.display = "none";
-      d2.style.display = "block";
-	  d3.style.display = "none";
-      d4.style.display = "none";
+        {
+          d1.style.display = "none";
+          d2.style.display = "block";
+          d3.style.display = "none";
+          d4.style.display = "none";
+        }
+      }
 
-   }
-}
+      function SwapToDiv3(div1, div2, div3, div4) {
+        d1 = document.getElementById(div1);
+        d2 = document.getElementById(div2);
+        d3 = document.getElementById(div3);
+        d4 = document.getElementById(div4);
 
-function SwapToDiv3(div1,div2, div3, div4)
-{
-   d1 = document.getElementById(div1);
-   d2 = document.getElementById(div2);
-   d3 = document.getElementById(div3);
-   d4 = document.getElementById(div4);
+        {
+          d1.style.display = "none";
+          d2.style.display = "none";
+          d3.style.display = "block";
+          d4.style.display = "none";
+        }
+      }
 
-   {
-      d1.style.display = "none";
-      d2.style.display = "none";
-	  d3.style.display = "block";
-      d4.style.display = "none";
+      function SwapToDiv4(div1, div2, div3, div4) {
+        d1 = document.getElementById(div1);
+        d2 = document.getElementById(div2);
+        d3 = document.getElementById(div3);
+        d4 = document.getElementById(div4);
 
-   }
-}
-
-function SwapToDiv4(div1,div2, div3, div4)
-{
-   d1 = document.getElementById(div1);
-   d2 = document.getElementById(div2);
-   d3 = document.getElementById(div3);
-   d4 = document.getElementById(div4);
-
-   {
-      d1.style.display = "none";
-      d2.style.display = "none";
-	  d3.style.display = "none";
-      d4.style.display = "block";
-
-   }
-}
-
-</script>
-
-
-</body>
+        {
+          d1.style.display = "none";
+          d2.style.display = "none";
+          d3.style.display = "none";
+          d4.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>
