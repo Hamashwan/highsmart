@@ -30,10 +30,12 @@
         <nav>
           <!-- <a href="index.html"> <img src="logo-araknis.png" height="50px" width="50px" /> </a>-->
           <a href="index.html">Home</a>
-          <a href="aboutus.html">About Us</a>
-          <a href="solutions.html">Solutions</a>
-          <a href="services.html">Services</a>
+          <a href="#aboutus">About Us</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#services">Services</a>
           <a href="#contact">Contact Us</a>
+          <a href="#brands">Brands</a>
+
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -67,7 +69,7 @@
 
     <!-- Solutions-->
     <div>
-      <div class="sectiontitle">
+      <div class="sectiontitle" id="solutions">
         <h1 class="heading">
           <a href="solutions.html">
             Providing you with high end smart home solutions
@@ -171,14 +173,13 @@
         style="background-image: url(cinema.jpg); background-position: 0% 25%"
       >
         <h1>Home Cinemaaaa</h1>
-        <br />
         <p>bas tozek grana</p>
       </div>
     </div>
     <div class="big_wrapper">
       <!-- Services -->
 
-      <div class="sectiontitle">
+      <div class="sectiontitle" id="services">
         <h1 class="heading">
           <a href="services.html">
             Dedicated to great service and customer support
@@ -188,24 +189,19 @@
 
       <div id="services">
         <div class="one_third">
-          <h2 class="heading"><a href="#">CONSULTATION</a></h2>
+          <h2 class="heading"><a href="#">CONSULTATION </a></h2>
           <p>
             Pre-meeting and discussion about everything that should be included
-            in your smart home.<br />
-            <br />
-            <br />
+            in your smart home.
           </p>
-          <footer><a href="#">View Details </a></footer>
         </div>
 
         <div class="one_third">
           <h2 class="heading"><a href="#">SYSTEM DOCUMENTATION </a></h2>
           <p>
             We provide the documents that describes your smart home's
-            requirements, capabilities, and specifications. <br />
-            <br />
+            requirements, capabilities, and specifications.
           </p>
-          <footer><a href="#">View Details </a></footer>
         </div>
 
         <div class="one_third">
@@ -215,35 +211,26 @@
             leads to the best balance of functionality, reliability and
             aesthetics in the end result.
           </p>
-          <footer><a href="#">View Details </a></footer>
         </div>
         <div class="one_third">
           <h2 class="heading"><a href="#">IMPLEMENTATION</a></h2>
           <p>
             Our technicians plan and implement all of your cabling needs in new
-            construction or when upgrading an existing space. <br />
-            <br />
+            construction or when upgrading an existing space.
           </p>
-          <footer><a href="#">View Details </a></footer>
         </div>
 
         <div class="one_third">
           <h2 class="heading"><a href="#">PROJECT MANAGEMENT </a></h2>
-          <p>
-            NEW PROMPT NEEDED<br /><br /><br />
-            <br />
-          </p>
-          <footer><a href="#">View Details </a></footer>
+          <p>NEW PROMPT NEEDED</p>
         </div>
 
         <div class="one_third">
-          <h2 class="heading"><a href="#">MAINTENANCE & SUPPORT </a></h2>
+          <h2 class="heading">MAINTENANCE & SUPPORT</h2>
           <p>
             Hi-Smart's technical team is available on 8-5 hours to diagnose,
             update, replace, and repair any failure that can happen.
-            <br /><br />
           </p>
-          <footer><a href="#">View Details </a></footer>
         </div>
       </div>
 
@@ -331,7 +318,7 @@
 
       <!-- ################################################################################################ -->
 
-      <div class="sectiontitle">
+      <div class="sectiontitle" id="aboutus">
         <h1>Years of experience</h1>
         <p>
           From the beginning of 2013 we were a team working on IT and Cisco
@@ -372,43 +359,6 @@
           </div>
         </div>
       </div>
-
-      <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-          showSlides((slideIndex += n));
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-          showSlides((slideIndex = n));
-        }
-
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          var captionText = document.getElementById("caption");
-          if (n > slides.length) {
-            slideIndex = 1;
-          }
-          if (n < 1) {
-            slideIndex = slides.length;
-          }
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " active";
-          captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-      </script>
 
       <!-- ################################################################################################ -->
       <!-- Contact -->
@@ -522,7 +472,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <script>
-      new Splide(".splide").mount();
+      new Splide(".splide", {
+        type: "loop",
+      }).mount();
     </script>
     <script>
       // Get the modal
