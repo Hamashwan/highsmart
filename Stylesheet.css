@@ -370,12 +370,6 @@ a {
   -moz-box-shadow: 0px 0px 66px 44px rgba(0, 0, 0, 0.03);
   box-shadow: 0px 0px 66px 44px rgba(0, 0, 0, 0.02);
 }
-/*#logo_grid {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
-}*/
 
 #logo_grid {
   margin: auto;
@@ -396,15 +390,11 @@ a {
     width: 280px;
   }
 }
-/*Contact*/
-/* #contact {
-   margin: auto;
-}
-*/
+/* Contact */
 #contactdiv {
   display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 #mapdiv {
   display: inline-block;
@@ -414,7 +404,6 @@ a {
 .contactform {
   width: 200px;
   height: 500px;
-  vertical-align: top;
   text-align: center;
 }
 
@@ -430,8 +419,10 @@ a {
   #contactform {
     width: 100%;
   }
+  #contactdiv {
+    grid-template-columns: 1fr;
+  }
 }
-
 /* About us gallery */
 
 * {
@@ -516,7 +507,6 @@ a {
   opacity: 0.6;
 }
 
-.active,
 .demo:hover {
   opacity: 1;
 }
