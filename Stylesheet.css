@@ -22,7 +22,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .topnav a {
@@ -156,11 +156,8 @@ a {
 /* Solutions */
 .grow {
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   height: 100px;
-  width: -moz-calc(100% - 8x);
-  width: -webkit-calc(100% - 8px);
-  width: -o-calc(100% - 8px);
   width: calc(100% - 8px);
   margin: 4px;
   position: relative;
@@ -255,6 +252,12 @@ a {
 }
 .sectiontitle a:hover {
   color: #8a4fff;
+}
+
+.serviceicon {
+  height: 130px;
+  width: 130px;
+  margin-bottom: 20px;
 }
 
 /* Wrapper */
