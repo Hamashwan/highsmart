@@ -38,6 +38,7 @@ a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 19px;
+  vertical-align: middle;
 }
 
 .topnav a:hover:not(.active) {
