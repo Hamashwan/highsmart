@@ -171,60 +171,18 @@
     </div>
 
     <script type="text/javascript">
-      function SwapToDiv1(div1, div2, div3, div4) {
-        d1 = document.getElementById(div1);
-        d2 = document.getElementById(div2);
-        d3 = document.getElementById(div3);
-        d4 = document.getElementById(div4);
+      function swap(divToSwap) {
+        const d1 = document.getElementById("lights-first");
+        const d2 = document.getElementById("lights-second");
+        const d3 = document.getElementById("lights-third");
+        const d4 = document.getElementById("lights-fourth");
 
-        {
-          d1.style.display = "block";
-          d2.style.display = "none";
-          d3.style.display = "none";
-          d4.style.display = "none";
-        }
-      }
+        d1.style.display = "none";
+        d2.style.display = "none";
+        d3.style.display = "none";
+        d4.style.display = "none";
 
-      function SwapToDiv2(div1, div2, div3, div4) {
-        d1 = document.getElementById(div1);
-        d2 = document.getElementById(div2);
-        d3 = document.getElementById(div3);
-        d4 = document.getElementById(div4);
-
-        {
-          d1.style.display = "none";
-          d2.style.display = "block";
-          d3.style.display = "none";
-          d4.style.display = "none";
-        }
-      }
-
-      function SwapToDiv3(div1, div2, div3, div4) {
-        d1 = document.getElementById(div1);
-        d2 = document.getElementById(div2);
-        d3 = document.getElementById(div3);
-        d4 = document.getElementById(div4);
-
-        {
-          d1.style.display = "none";
-          d2.style.display = "none";
-          d3.style.display = "block";
-          d4.style.display = "none";
-        }
-      }
-
-      function SwapToDiv4(div1, div2, div3, div4) {
-        d1 = document.getElementById(div1);
-        d2 = document.getElementById(div2);
-        d3 = document.getElementById(div3);
-        d4 = document.getElementById(div4);
-
-        {
-          d1.style.display = "none";
-          d2.style.display = "none";
-          d3.style.display = "none";
-          d4.style.display = "block";
-        }
+        document.getElementById(divToSwap).style.display = "block";
       }
     </script>
   </body>

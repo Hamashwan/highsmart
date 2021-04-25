@@ -26,21 +26,19 @@
   <body>
     <!-- ################################################################################################ -->
     <div class="topnav" id="myTopnav">
-      <div style="margin: auto">
-        <nav>
-          <!-- <a href="index.html"> <img src="logo-araknis.png" height="50px" width="50px" /> </a>-->
-          <a href="index.html">Home</a>
-          <a href="#aboutus">About Us</a>
-          <a href="#solutions">Solutions</a>
-          <a href="#servicestitle">Services</a>
-          <a href="#contact">Contact Us</a>
-          <a href="#brands">Brands</a>
+      <a href="index.html">
+        <img src="logo-araknis.png" height="50px" width="50px" />
+      </a>
+      <a href="index.html">Home</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#servicestitle">Services</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#brands">Brands</a>
 
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </nav>
-      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     <!-- Home -->
     <div id="homediv">
@@ -90,28 +88,25 @@
 
         <button
           class="articlebutton selectedbutton"
-          onclick="javascript:SwapToDiv1('lights-first','lights-second','lights-third','lights-fourth')"
+          onclick="javascript:swap('lights-first')"
         >
           <i class="fa fa-home"></i>
         </button>
 
         <button
           class="articlebutton"
-          onclick="javascript:SwapToDiv2('lights-first','lights-second','lights-third','lights-fourth')"
+          onclick="javascript:swap('lights-second')"
         >
           <i class="fa fa-trash"></i>
         </button>
 
-        <button
-          class="articlebutton"
-          onclick="javascript:SwapToDiv3('lights-first','lights-second','lights-third','lights-fourth')"
-        >
+        <button class="articlebutton" onclick="javascript:swap('lights-third')">
           <i class="fa fa-folder"></i>
         </button>
 
         <button
           class="articlebutton"
-          onclick="javascript:SwapToDiv4('lights-first','lights-second','lights-third','lights-fourth')"
+          onclick="javascript:swap('lights-fourth')"
         >
           <i class="fa fa-close"></i>
         </button>
