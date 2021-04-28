@@ -402,19 +402,11 @@ a {
 }
 /* Contact */
 #contactdiv {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
 }
 #mapdiv {
   display: inline-block;
   width: 49.5%;
   height: 500px;
-}
-.contactform {
-  width: 200px;
-  height: 500px;
-  text-align: center;
 }
 
 .contacticon {
@@ -428,9 +420,6 @@ a {
   }
   #contactform {
     width: 100%;
-  }
-  #contactdiv {
-    grid-template-columns: 1fr;
   }
 }
 /* About us gallery */
