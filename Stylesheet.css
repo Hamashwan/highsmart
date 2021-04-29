@@ -230,7 +230,7 @@ a {
 
 /* Big Chungus */
 .big_wrapper {
-  padding: 30px;
+  padding: 2rem;
   margin: auto;
 }
 
@@ -401,6 +401,11 @@ a {
   }
 }
 /* Contact */
+#contact {
+  padding: 1.5rem;
+  background-color: black;
+  color: white;
+}
 #contactdiv {
 }
 #mapdiv {
